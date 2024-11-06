@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Commpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/IMG_20241010_103510.png" calss="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer/Application Developer</p>
+                <h1>Hi, I'm <span> Bryan Talisik </span> <br>From Bonifacio</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------about------------------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/IMG_20241010_120820.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, my name is Bryan M. Talisik, and I’m 21 years old. I’m a web and application developer 
+                        based in Pisaan, Bonifacio, Mis.Occ specializing in creating responsive websites 
+                        and efficient applications. Aside from my development work, I have 
+                        a hidden talent for playing various musical instruments. I’m always 
+                        eager to learn new things and collaborate on creative projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>T-shirt design</span><br> Layout design of a T-shirt</li>
+                            <li><span>Logo Designing</span><br>Making Logo design</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Developing Mobile-Friendly and Responsive Designs</li>
+                            <li><span>2020-2021</span><br>Revamped a Corporate Website</li>
+                            <li><span>2020</span><br>I started creating logo designs </li>
+                            <li><span>2019-2020</span><br>I learned to design clothing layouts</li>
+                            <li><span>2015-2016</span><br>Conducted Code Reviews and Mentoring</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College</span><br>TCGC taking BSCS</li>
+                            <li><span>High School</span><br>BNHS/NMSCST</li>
+                            <li><span>Elementary</span><br>Bonifacio Central School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <!-----------------------------------services------------------------------------------------------>
+    <div id ="services">
+        <div class="container">
+            <hi class="sub-title">My Services</hi>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design involve creating and developing
+                         the visual and functional aspects of websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design focus on creating digital products
+                         that provide a smooth, efficient, and enjoyable experience for users.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Design</h2>
+                    <p>App design involve creating the visual layout
+                         and interactive experience of mobile or web applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-tshirt"></i>
+                    <h2>T-shirt Designing </h2>
+                    <p>T-shirt Designing is a process of applying designs, patterns, or text onto a t-shirt.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-palette"></i>
+                    <h2>Logo Design</h2>
+                    <p>Logo Design is a process creating a unique graphic symbol 
+                        or emblem that represents a brand, business, or product. </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------portfolio------------------------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.jpg">
+                    <div class="layer">
+                        <h3>Accounting Software Promotion for Business Owners</h3>
+                        <p>It would highlight the software's
+                            features, include clear calls-to-action,
+                            and offer a clean, responsive design 
+                            to engage visitors and encourage sign-ups.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.jpg">
+                    <div class="layer">
+                        <h3>Browsing Deals on a Mobile Marketplace App</h3>
+                        <p>The design would focus on easy navigation,
+                            clear product listings, and smooth filtering
+                            options, ensuring users can quickly find and
+                            interact with the best deals, enhancing their overall shopping experience.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>TOLKER: Chat App Interface</h3>
+                        <p>Chat App Interface with a smooth, intuitive layout. It would include key features like real-time
+                            messaging, notifications, user profiles, and a clean, responsive design
+                            to ensure a seamless user experience across all devices.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div>  
+                </div>
+                <div class="work">
+                    <img src="image/work-4.jpg">
+                    <div class="layer">
+                        <h3> SVF Altar Server Logo</h3>
+                        <p>This design for the SVF Altar Server group in Bonifacio,
+                            Misamis Occidental features a central cross, chalice,
+                            and host, symbolizing service and devotion. A circular
+                            layout with a golden gradient conveys unity, while the
+                             laurel wreath adds honor. The clean font style reflects the group's role in the church community.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="image/work-5.jfif">
+                    <div class="layer">
+                        <h3>SVFPYC Logo</h3>
+                        <p>The logo for the St. Vincent Ferrer Parish Youth
+                            Choir features a church, a treble clef symbolizing music,
+                            and a red cross representing spirituality, all framed in a circular design.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div>  
+                </div>
+                <div class="work">
+                    <img src="image/work-6.jpg">
+                    <div class="layer">
+                        <h3>Altar Server T-shirt Design</h3>
+                        <p>The front features altar servers with a cross and the bold phrase "Ad Majorem Dei Gloriam."
+                            The back displays the group’s emblem, location in elegant script, and
+                            "Totus Tuus" at the bottom, symbolizing commitment and unity with a minimalist design.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div>  
+                </div>
+                <div class="work">
+                    <img src="image/work-7.jpg">
+                    <div class="layer">
+                        <h3>SVFPYC T-shirt Design</h3>
+                        <p>The shirt's front displays a vibrant emblem of a church, cross, treble clef, and red flame
+                            symbolizing musical devotion. The back features a golden brushstroke
+                            design with St. Vincent Ferrer, the choir's spiritual patron.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div>  
+                </div>
+                <div class="work">
+                    <img src="image/work-8.jpg">
+                    <div class="layer">
+                        <h3>SK Bonifacio C-2 Jersey</h3>
+                        <p>This jersey design has a pink and black gradient with flame-like patterns. It features "Bonifacio Cluster 2"
+                            and the number "8" on the front, with the number and "SK Councilor" on the back. Logos are placed
+                            on the chest for added detail.</p>
+                        <a href="#"><i class="fas fa-share"></i></a>
+                    </div>  
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------------------------------contact------------------------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> talisikbryan92@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 09516547515</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/bryan.talisik.9" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@bryantalisik?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/bryanikzzz/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="image/RESUME.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="contactForm">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <p id="formStatus" style="display:none;"></p>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Bryan. Made with the <i class="fa fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script> 
+
+<script>
+    var sidemeu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJZfy2wi3YxA4roroiEY0Pttkua5VDEoBT0P_Wk-QrrvNuXBM8Q4l1Ch3DfaKIezzQgA/exec';
+const form = document.forms['submit-to-google-sheet'];
+const formStatus = document.getElementById('formStatus');
+const msg = document.getElementById('msg');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    formStatus.style.display = 'none'; // Reset status
+    msg.innerHTML = ''; // Reset message
+
+    fetch(scriptURL, { 
+        method: 'POST', 
+        body: new FormData(form)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        formStatus.style.display = 'block';
+        formStatus.textContent = 'Form submitted successfully!';
+        formStatus.style.color = 'green'; // Success feedback
+        form.reset(); // Clear form
+
+        setTimeout(() => {
+            formStatus.style.display = 'none'; // Hide message after 5 seconds
+        }, 5000);
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+        formStatus.style.display = 'block';
+        formStatus.textContent = 'There was an error submitting the form: ' + error.message;
+        formStatus.style.color = 'red'; // Error feedback
+    });
+});
+
+</script>
+
+</body>
+</html>
